@@ -123,7 +123,7 @@ async function waitForManagedTokenRefresh(
   // Short window only: this runs while the app shows its loading screen. The
   // OS refreshes on its own cycle; making the user wait 3 x 4 s before falling
   // back to the cached entitlement was the main 10 s startup hang.
-  for (let attempt = 0; attempt < 3; attempt++) {
+  for (let attempt = 0; attempt < 15; attempt++) {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     const token = await getAccessToken(staleToken);
     if (token && token !== staleToken) {
