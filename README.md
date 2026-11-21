@@ -4,7 +4,7 @@
 
 ### Secure, peer-to-peer video calling — no account, no logs
 
-[![Made by Jema Technology](https://img.shields.io/badge/Made%20by-Jema%20Technology-8286ef)](https://www.jematechnology.fr)
+[![Made by Wings8 Technology](https://img.shields.io/badge/Made%20by-Wings8%20Technology-8286ef)](https://www.wings8.org)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)](LICENSE)
 [![React](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=white)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -68,7 +68,7 @@
 ### Development
 
 ```bash
-git clone https://github.com/JemaOS/anima.git
+git clone https://github.com/Wings8-Tech/anima.git
 cd anima
 npm install
 npm run dev
@@ -119,5 +119,5 @@ git push origin feat/my-feature
 Released under the **GNU AGPL-3.0** — see [LICENSE](LICENSE).
 
 <div align="center">
-Made with ❤️ by <a href="https://www.jematechnology.fr">Jema Technology</a>
+Made with ❤️ by <a href="https://www.wings8.org">Wings8 Technology</a>
 </div>

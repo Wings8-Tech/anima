@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Jema Technology.
+// Copyright (c) 2025 Wings8 Technology.
 // Distributed under the license specified in the root directory of this project.
 
 import Peer, { DataConnection, MediaConnection } from "peerjs";
@@ -230,7 +230,7 @@ export class P2PManager {
     ) || "ontouchstart" in window;
   }
 
-  // Cache synchrone des ICE servers (self-hosted coturn sur turn.jemaos.com).
+  // Cache synchrone des ICE servers (self-hosted coturn sur turn.wings8.org).
   // Alimenté de façon asynchrone par refreshIceServers() avant l'init du Peer,
   // puis rafraîchi périodiquement (credentials TURN éphémères).
   private cachedIceServers: RTCIceServer[] = [

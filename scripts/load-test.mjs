@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Jema Technology.
+// Copyright (c) 2025 Wings8 Technology.
 // Distributed under the license specified in the root directory of this project.
 
 /**
@@ -18,11 +18,11 @@
  * prints the expected aggregate server relay load to compare against.
  *
  * Usage:
- *   node scripts/load-test.mjs --url https://anima.jemaos.com --clients 8 --duration 60
+ *   node scripts/load-test.mjs --url https://anima.wings8.org --clients 8 --duration 60
  *   node scripts/load-test.mjs                       # defaults: prod URL, 8 clients, 60s
  *
  * Options:
- *   --url       Base app URL (default: https://anima.jemaos.com)
+ *   --url       Base app URL (default: https://anima.wings8.org)
  *   --clients   Number of participants including host (default: 8, max 8)
  *   --duration  Test duration in seconds (default: 60)
  *   --headed    Show browser windows (default: headless)
@@ -36,7 +36,7 @@ import { chromium } from "playwright";
 // ---- CLI args ----------------------------------------------------------------
 function parseArgs(argv) {
   const args = {
-    url: "https://anima.jemaos.com",
+    url: "https://anima.wings8.org",
     clients: 8,
     duration: 60,
     headed: false,

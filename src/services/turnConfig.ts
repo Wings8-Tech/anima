@@ -1,12 +1,12 @@
-// Copyright (c) 2025 Jema Technology.
+// Copyright (c) 2025 Wings8 Technology.
 // Distributed under the license specified in the root directory of this project.
 
 /**
  * Configuration du serveur self-hosted (coturn + PeerServer) et récupération
  * des credentials TURN éphémères.
  *
- * - Le signaling (PeerServer) tourne derrière Nginx HTTPS sur turn.jemaos.com:8443
- * - Le TURN/STUN (coturn) tourne sur turn.jemaos.com (3478 / 5349 TLS)
+ * - Le signaling (PeerServer) tourne derrière Nginx HTTPS sur turn.wings8.org:8443
+ * - Le TURN/STUN (coturn) tourne sur turn.wings8.org (3478 / 5349 TLS)
  * - Les credentials TURN sont éphémères (HMAC) et fournies par la route
  *   serverless Vercel /api/turn-credentials. Le secret HMAC n'est jamais
  *   exposé au client.
@@ -19,7 +19,7 @@
 const env = import.meta.env;
 
 export const SIGNALING_HOST: string =
-  env.VITE_SIGNALING_HOST || "turn.jemaos.com";
+  env.VITE_SIGNALING_HOST || "turn.wings8.org";
 export const SIGNALING_PORT: number = Number(env.VITE_SIGNALING_PORT || 8443);
 export const SIGNALING_PATH: string = env.VITE_SIGNALING_PATH || "/anima";
 export const SIGNALING_KEY: string =
@@ -27,7 +27,7 @@ export const SIGNALING_KEY: string =
 export const SIGNALING_SECURE: boolean =
   (env.VITE_SIGNALING_SECURE ?? "true") !== "false";
 
-export const TURN_REALM: string = env.VITE_TURN_REALM || "turn.jemaos.com";
+export const TURN_REALM: string = env.VITE_TURN_REALM || "turn.wings8.org";
 
 // Endpoint qui fournit les credentials éphémères.
 // Servi par le serveur self-hosted (anima-signaling derrière Nginx HTTPS),

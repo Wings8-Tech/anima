@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Jema Technology.
+// Copyright (c) 2025 Wings8 Technology.
 // Distributed under the license specified in the root directory of this project.
 
 import React, { useState, useCallback } from "react";
@@ -207,12 +207,12 @@ export function HomePage() {
         <p className="text-[color:var(--text-ghost)] text-xs">
           {t("developedBy")}{" "}
           <a
-            href="https://www.jematechnology.fr/"
+            href="https://www.wings8.org/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary-500 dark:text-primary-400 hover:underline"
           >
-            Jema Technology
+            Wings8 Technology
           </a>{" "}
           {t("licenseLine")}
         </p>
