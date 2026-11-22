@@ -76,7 +76,7 @@ export function generateAvatarColor(id: string): string {
     "#4285F4", // Bleu Google
     "#34A853", // Vert Google
     "#FBBC04", // Jaune Google
-    "#8430CE", // Violet
+    "var(--brand)", // Violet
     "#FF6D00", // Orange
     "#00BFA5", // Turquoise
   ];

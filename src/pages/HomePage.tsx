@@ -63,7 +63,7 @@ export function HomePage() {
       <div
         className="absolute w-[500px] h-[500px] rounded-full blur-[100px]"
         style={{
-          background: "radial-gradient(circle, #8f88ed 0%, transparent 70%)",
+          background: "radial-gradient(circle, var(--brand-glow) 0%, transparent 70%)",
           top: "15%",
           left: "50%",
           transform: "translateX(-50%)",
@@ -81,7 +81,7 @@ export function HomePage() {
       <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 py-6">
         {/* Logo and branding - compact */}
         <div className="flex flex-col items-center mb-6">
-          <div className="w-14 h-14 bg-gradient-to-br from-[#8f88ed] to-[#0B1F4B] rounded-xl flex items-center justify-center mb-3 shadow-lg">
+          <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-3 shadow-lg brand-tile">
             <Icon name="videocam" size={28} className="text-white" />
           </div>
 
@@ -97,7 +97,7 @@ export function HomePage() {
             {/* Create meeting button */}
             <button
               onClick={handleCreateRoom}
-              className="w-full flex items-center justify-center gap-2 rounded-xl py-3 bg-[#8f88ed] hover:bg-[#7b74d9] text-white font-medium transition-colors duration-200 text-sm"
+              className="w-full flex items-center justify-center gap-2 rounded-xl py-3 brand-primary-btn font-medium transition-colors duration-200 text-sm"
             >
               <Icon name="video-call" size={20} className="text-white" />
               <span>{t("newMeeting")}</span>
@@ -143,7 +143,7 @@ export function HomePage() {
         {/* Features - inline compact */}
         <div className="mt-5 flex items-center justify-center gap-5 text-[color:var(--text-subtle)] text-xs">
           <div className="flex items-center gap-1.5">
-            <Icon name="shield" size={14} className="text-[#8f88ed]" />
+            <Icon name="shield" size={14} className="text-[var(--brand)]" />
             <span>P2P</span>
           </div>
           <div className="flex items-center gap-1.5">

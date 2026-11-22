@@ -15,6 +15,10 @@
   --page-bg: #f5f7fb;
   --home-bg: #f5f7fb;
   --home-gradient: linear-gradient(180deg, #f8f9fd 0%, #eef2fa 50%, #f8f9fd 100%);
+  --brand: #0B1F4B;
+  --brand-hover: #081A3E;
+  --brand-contrast: #FFFFFF;
+  --brand-glow: rgba(11, 31, 75, 0.25);
   --foreground: #121826;
   --foreground-muted: #495366;
   --text-subtle: #5f6878;
@@ -45,7 +49,7 @@
   --home-control-hover: #e9edf4;
   --home-control-text: #3a4353;
   --home-placeholder: #8a93a3;
-  --focus-border: #8f88ed;
+  --focus-border: var(--brand);
   --accent-glow-opacity: 0.14;
 
   --scrollbar-thumb: #c3ccda;
@@ -57,7 +61,11 @@
 
   --page-bg: #0f0f0f;
   --home-bg: #0f0f1a;
-  --home-gradient: linear-gradient(180deg, #0f0f1a 0%, #151528 50%, #0f0f1a 100%);
+  --home-gradient: linear-gradient(180deg, #0b1020 0%, #0f172a 50%, #0b1020 100%);
+  --brand: #F99634;
+  --brand-hover: #FEBF69;
+  --brand-contrast: #0B1F4B;
+  --brand-glow: rgba(249, 150, 52, 0.22);
   --foreground: #ffffff;
   --foreground-muted: #d1d5db;
   --text-subtle: #6b7280;
@@ -217,7 +225,7 @@
 
 /* WINGS8: Dark gradient for video conferencing */
 .bg-gradient-dark {
-  background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+  background: linear-gradient(135deg, #0b1020 0%, #0f172a 50%, #0b1020 100%);
 }
 
 /* Glassmorphism utility classes */
@@ -253,7 +261,7 @@
   box-shadow: 0 8px 32px 0 rgba(143, 136, 237, 0.15);
 }
 
-/* Glassmorphism button with primary color (#8f88ed) */
+/* Glassmorphism button with primary color (var(--brand)) */
 .glass-btn {
   background: rgba(143, 136, 237, 0.3);
   backdrop-filter: blur(8px);
@@ -457,11 +465,11 @@ html:not(.dark) [class*="bg-emerald-"] [class~="text-white"],
 html:not(.dark) [class~="text-white"][class*="bg-emerald-"],
 html:not(.dark) [class*="bg-red-"] [class~="text-white"],
 html:not(.dark) [class~="text-white"][class*="bg-red-"],
-html:not(.dark) [class*="bg-[#8f88ed]"] [class~="text-white"],
-html:not(.dark) [class~="text-white"][class*="bg-[#8f88ed]"],
+html:not(.dark) [class*="bg-[var(--brand)]"] [class~="text-white"],
+html:not(.dark) [class~="text-white"][class*="bg-[var(--brand)]"],
 html:not(.dark) [class*="bg-[#0B1F4B]"] [class~="text-white"],
 html:not(.dark) [class~="text-white"][class*="bg-[#0B1F4B]"],
-html:not(.dark) [class*="from-[#8f88ed]"] [class~="text-white"],
+html:not(.dark) [class*="from-[var(--brand)]"] [class~="text-white"],
 html:not(.dark) [class*="from-black"] [class~="text-white"],
 html:not(.dark) [class*="bg-black"] [class~="text-white"],
 html:not(.dark) [class~="text-white"][class*="bg-black"],
@@ -532,3 +540,15 @@ html:not(.dark) .group:hover [class~="group-hover:text-gray-400"] {
 .dark .hover\:bg-primary-600:hover { background-color: #FEBF69 !important; color: #0B1F4B !important; }
 .dark .text-primary-500, .dark .text-primary-400 { color: #F99634 !important; }
 .dark .border-primary-500 { border-color: #F99634 !important; }
+
+/* Wings8 brand primitives */
+.brand-tile {
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-hover) 100%);
+}
+.brand-primary-btn {
+  background-color: var(--brand);
+  color: var(--brand-contrast);
+}
+.brand-primary-btn:hover {
+  background-color: var(--brand-hover);
+}

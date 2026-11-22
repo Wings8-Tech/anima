@@ -55,7 +55,7 @@ export function ParticipantsPanel({
                   <Icon
                     name="pan-tool"
                     size={14}
-                    className="text-[#8f88ed]"
+                    className="text-[var(--brand)]"
                   />
                 )}
               </div>

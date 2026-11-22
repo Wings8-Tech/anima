@@ -71,7 +71,7 @@ function LanguageSelector() {
               }}
               className={`w-full px-3 py-2 text-left text-xs transition-colors ${
                 lang === language.code
-                  ? "bg-[#8f88ed]/15 text-[#8f88ed] font-medium"
+                  ? "bg-[var(--brand)]/15 text-[var(--brand)] font-medium"
                   : "text-gray-300 hover:bg-white/[0.05]"
               }`}
             >

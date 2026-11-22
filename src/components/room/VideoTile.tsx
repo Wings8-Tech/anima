@@ -508,7 +508,7 @@ export const VideoTile = memo(function VideoTile({
       {/* Hand raised indicator */}
       {participant.handRaised && (
         <div
-          className={`absolute ${!isLocal && participant.connectionQuality ? "top-10" : "top-3"} left-3 bg-[#8f88ed] w-8 h-8 flex items-center justify-center rounded-full animate-pulse z-20`}
+          className={`absolute ${!isLocal && participant.connectionQuality ? "top-10" : "top-3"} left-3 bg-[var(--brand)] w-8 h-8 flex items-center justify-center rounded-full animate-pulse z-20`}
         >
           <Icon name="pan-tool" size={16} className="text-white" />
         </div>

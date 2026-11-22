@@ -163,7 +163,7 @@ export function ThemeMenu() {
                 onClick={() => handleSelect(option.value)}
                 className={`w-full px-3 py-2 flex items-center gap-2 text-left text-xs transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary-400 ${
                   selected
-                    ? "bg-[#8f88ed]/15 text-[#8f88ed] font-medium"
+                    ? "bg-[var(--brand)]/15 text-[var(--brand)] font-medium"
                     : "text-[color:var(--foreground-muted)] hover:bg-[color:var(--control-hover)]"
                 }`}
               >
