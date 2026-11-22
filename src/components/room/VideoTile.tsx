@@ -114,7 +114,7 @@ const SpeakingIndicator = memo(function SpeakingIndicator({
       className="absolute inset-0 rounded-2xl pointer-events-none z-10 transition-opacity duration-150"
       style={{
         opacity: Math.min(audioLevel * 2, 0.8),
-        boxShadow: 'inset 0 0 0 4px #757aed',
+        boxShadow: 'inset 0 0 0 4px #0B1F4B',
       }}
     />
   );
@@ -144,14 +144,14 @@ const AudioIndicator = memo(function AudioIndicator({
     <div className="relative flex items-center justify-center">
       <div
         className={`relative flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full transition-all duration-150 ${
-          isSpeaking ? "bg-[#757aed]/90" : "bg-neutral-600/80"
+          isSpeaking ? "bg-[#0B1F4B]/90" : "bg-neutral-600/80"
         }`}
       >
         <Icon name="mic" size={size === "small" ? 10 : 14} className="text-white" />
         {isSpeaking && (
           <>
             <span
-              className="absolute inset-0 rounded-full border border-[#757aed] animate-ping"
+              className="absolute inset-0 rounded-full border border-[#0B1F4B] animate-ping"
               style={{ animationDuration: "1s", opacity: Math.min(audioLevel * 2, 0.6) }}
             />
             <span
@@ -171,7 +171,7 @@ const AudioIndicator = memo(function AudioIndicator({
             <div
               key={i}
               className={`w-0.5 rounded-full transition-all duration-75 ${
-                audioLevel > threshold ? "bg-[#757aed]" : "bg-gray-500"
+                audioLevel > threshold ? "bg-[#0B1F4B]" : "bg-gray-500"
               }`}
               style={{
                 height: `${(i + 1) * 4}px`,
@@ -439,7 +439,7 @@ export const VideoTile = memo(function VideoTile({
       `
         relative w-full h-full min-h-0 min-w-0 bg-neutral-800 rounded-2xl overflow-hidden
         ${isActive ? "ring-2 ring-primary-500" : ""}
-        ${isSpeaking ? "ring-2 ring-[#757aed]" : ""}
+        ${isSpeaking ? "ring-2 ring-[#0B1F4B]" : ""}
       `,
     [isActive, isSpeaking]
   );

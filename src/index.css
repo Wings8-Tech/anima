@@ -459,8 +459,8 @@ html:not(.dark) [class*="bg-red-"] [class~="text-white"],
 html:not(.dark) [class~="text-white"][class*="bg-red-"],
 html:not(.dark) [class*="bg-[#8f88ed]"] [class~="text-white"],
 html:not(.dark) [class~="text-white"][class*="bg-[#8f88ed]"],
-html:not(.dark) [class*="bg-[#757aed]"] [class~="text-white"],
-html:not(.dark) [class~="text-white"][class*="bg-[#757aed]"],
+html:not(.dark) [class*="bg-[#0B1F4B]"] [class~="text-white"],
+html:not(.dark) [class~="text-white"][class*="bg-[#0B1F4B]"],
 html:not(.dark) [class*="from-[#8f88ed]"] [class~="text-white"],
 html:not(.dark) [class*="from-black"] [class~="text-white"],
 html:not(.dark) [class*="bg-black"] [class~="text-white"],
@@ -526,3 +526,8 @@ html:not(.dark) .group:hover [class~="group-hover:text-gray-500"],
 html:not(.dark) .group:hover [class~="group-hover:text-gray-400"] {
   color: var(--text-subtle);
 }
+
+/* Dark mode brand accent */
+.dark .bg-primary-500, .dark .hover\:bg-primary-600:hover { background-color: #F99634 !important; color: #0B1F4B !important; }
+.dark .text-primary-500, .dark .text-primary-400 { color: #F99634 !important; }
+.dark .border-primary-500 { border-color: #F99634 !important; }

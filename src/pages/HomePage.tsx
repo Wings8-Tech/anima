@@ -81,7 +81,7 @@ export function HomePage() {
       <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 py-6">
         {/* Logo and branding - compact */}
         <div className="flex flex-col items-center mb-6">
-          <div className="w-14 h-14 bg-gradient-to-br from-[#8f88ed] to-[#6366f1] rounded-xl flex items-center justify-center mb-3 shadow-lg">
+          <div className="w-14 h-14 bg-gradient-to-br from-[#8f88ed] to-[#0B1F4B] rounded-xl flex items-center justify-center mb-3 shadow-lg">
             <Icon name="videocam" size={28} className="text-white" />
           </div>
 

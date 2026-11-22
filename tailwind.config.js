@@ -27,7 +27,7 @@ module.exports = {
           200: "#B8C7DD", // Lavande pâle WINGS8
           300: "#8FA6C7",
           400: "#4C6B9B",
-          500: "#0A1F4A", // Violet primaire WINGS8 (main)
+          500: "#0B1F4B", // Violet primaire WINGS8 (main)
           600: "#081A3E", // Violet accent WINGS8
           700: "#061533",
           800: "#051129",
@@ -37,7 +37,7 @@ module.exports = {
         secondary: {
           400: "#8FA6C7",
           500: "#4C6B9B",
-          600: "#0A1F4A",
+          600: "#0B1F4B",
         },
         // Neutral (Dark Mode - Keep from Meet)
         neutral: {
