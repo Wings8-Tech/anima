@@ -552,3 +552,14 @@ html:not(.dark) .group:hover [class~="group-hover:text-gray-400"] {
 .brand-primary-btn:hover {
   background-color: var(--brand-hover);
 }
+
+/* Brand ink: white on navy (light), navy on orange (dark) */
+.brand-tile .brand-ink,
+.brand-primary-btn .brand-ink,
+.brand-tile svg,
+.brand-primary-btn svg {
+  color: var(--brand-contrast);
+}
+.brand-primary-btn {
+  color: var(--brand-contrast);
+}

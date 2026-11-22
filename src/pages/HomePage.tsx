@@ -82,7 +82,7 @@ export function HomePage() {
         {/* Logo and branding - compact */}
         <div className="flex flex-col items-center mb-6">
           <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-3 shadow-lg brand-tile">
-            <Icon name="videocam" size={28} className="text-white" />
+            <Icon name="videocam" size={28} className="brand-ink" />
           </div>
 
           <h1 className="text-2xl font-semibold text-[color:var(--foreground)] tracking-tight mb-1">
@@ -99,7 +99,7 @@ export function HomePage() {
               onClick={handleCreateRoom}
               className="w-full flex items-center justify-center gap-2 rounded-xl py-3 brand-primary-btn font-medium transition-colors duration-200 text-sm"
             >
-              <Icon name="video-call" size={20} className="text-white" />
+              <Icon name="video-call" size={20} className="brand-ink" />
               <span>{t("newMeeting")}</span>
             </button>
 
