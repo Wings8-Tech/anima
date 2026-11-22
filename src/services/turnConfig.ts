@@ -19,11 +19,11 @@
 const env = import.meta.env;
 
 export const SIGNALING_HOST: string =
-  env.VITE_SIGNALING_HOST || "turn.wings8.org";
-export const SIGNALING_PORT: number = Number(env.VITE_SIGNALING_PORT || 8443);
-export const SIGNALING_PATH: string = env.VITE_SIGNALING_PATH || "/anima";
+  env.VITE_SIGNALING_HOST || "0.peerjs.com";
+export const SIGNALING_PORT: number = Number(env.VITE_SIGNALING_PORT || 443);
+export const SIGNALING_PATH: string = env.VITE_SIGNALING_PATH || "/";
 export const SIGNALING_KEY: string =
-  env.VITE_SIGNALING_KEY || "cf94b4b5bb36430887cb6872b628fe55";
+  env.VITE_SIGNALING_KEY || "peerjs";
 export const SIGNALING_SECURE: boolean =
   (env.VITE_SIGNALING_SECURE ?? "true") !== "false";
 
@@ -34,7 +34,7 @@ export const TURN_REALM: string = env.VITE_TURN_REALM || "stun.cloudflare.com";
 // au même endroit que le signaling. Le secret HMAC ne quitte jamais le serveur.
 const TURN_CREDENTIALS_URL: string =
   env.VITE_TURN_CREDENTIALS_URL ||
-  `https://${SIGNALING_HOST}:${SIGNALING_PORT}/credentials`;
+  "https://connect-api.wings8tech.com/v1/turn-credentials";
 
 export interface TurnCredentials {
   readonly iceServers: RTCIceServer[];
