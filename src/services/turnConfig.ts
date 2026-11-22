@@ -27,7 +27,7 @@ export const SIGNALING_KEY: string =
 export const SIGNALING_SECURE: boolean =
   (env.VITE_SIGNALING_SECURE ?? "true") !== "false";
 
-export const TURN_REALM: string = env.VITE_TURN_REALM || "turn.wings8.org";
+export const TURN_REALM: string = env.VITE_TURN_REALM || "stun.cloudflare.com";
 
 // Endpoint qui fournit les credentials éphémères.
 // Servi par le serveur self-hosted (anima-signaling derrière Nginx HTTPS),
