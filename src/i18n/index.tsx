@@ -37,11 +37,11 @@ const LANG_STORAGE_KEY = "wings8os_lang";
 function detectInitialLang(): Lang {
   try {
     const saved = localStorage.getItem(LANG_STORAGE_KEY);
-    if (saved === "en" || saved === "fr") return saved;
+    if (saved === 'en' || saved === 'fr') return saved;
   } catch {
-    /* stockage indisponible */
+    /* storage unavailable */
   }
-  return "en";
+  return 'en';
 }
 
 export function I18nProvider({ children }: { children: ReactNode }) {
