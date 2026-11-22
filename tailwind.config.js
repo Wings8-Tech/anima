@@ -22,22 +22,22 @@ module.exports = {
       colors: {
         // Primary (WINGS8 Violet - replaces Google Blue)
         primary: {
-          50: "#F5F4FE",
-          100: "#E8E6FC",
-          200: "#D7D6F5", // Lavande pâle WINGS8
-          300: "#A9A4F0",
-          400: "#8F88ED",
-          500: "#6E60E8", // Violet primaire WINGS8 (main)
-          600: "#5242ED", // Violet accent WINGS8
-          700: "#4432C9",
-          800: "#3627A5",
-          900: "#2A1F81",
+          50: "#EEF2F8",
+          100: "#D6E0EE",
+          200: "#B8C7DD", // Lavande pâle WINGS8
+          300: "#8FA6C7",
+          400: "#4C6B9B",
+          500: "#0A1F4A", // Violet primaire WINGS8 (main)
+          600: "#081A3E", // Violet accent WINGS8
+          700: "#061533",
+          800: "#051129",
+          900: "#040D1F",
         },
         // Secondary (Violet-Bleu clair WINGS8)
         secondary: {
-          400: "#8F94FF",
-          500: "#6A6FFC",
-          600: "#5459E8",
+          400: "#8FA6C7",
+          500: "#4C6B9B",
+          600: "#0A1F4A",
         },
         // Neutral (Dark Mode - Keep from Meet)
         neutral: {

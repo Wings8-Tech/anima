@@ -1,25 +1,38 @@
 {
-  "name": "Anima - Visioconférence P2P",
+  "name": "Anima - P2P Video Calls",
   "short_name": "Anima",
-  "description": "Application de visioconférence collaborative peer-to-peer sécurisée et sans logs",
+  "description": "Secure, log-free peer-to-peer video collaboration",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "display_override": ["window-controls-overlay", "standalone", "browser"],
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "browser"
+  ],
   "orientation": "any",
-  "theme_color": "#7276d8",
+  "theme_color": "#0A1F4A",
   "background_color": "#000000",
-  "lang": "fr",
+  "lang": "en",
   "dir": "ltr",
   "id": "/",
   "launch_handler": {
-    "client_mode": ["navigate-existing", "auto"]
+    "client_mode": [
+      "navigate-existing",
+      "auto"
+    ]
   },
   "edge_side_panel": {},
   "permissions_policy": {
-    "camera": ["self"],
-    "microphone": ["self"],
-    "display-capture": ["self"],
+    "camera": [
+      "self"
+    ],
+    "microphone": [
+      "self"
+    ],
+    "display-capture": [
+      "self"
+    ],
     "geolocation": []
   },
   "icons": [
@@ -60,35 +73,35 @@
       "sizes": "1920x1080",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Page d'accueil Anima sur desktop"
+      "label": "Anima home on desktop"
     },
     {
       "src": "/screenshots/desktop-call.png",
       "sizes": "1920x1080",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Appel vidéo en cours sur desktop"
+      "label": "Video call in progress on desktop"
     },
     {
       "src": "/screenshots/mobile-home.png",
       "sizes": "750x1334",
       "type": "image/png",
       "form_factor": "narrow",
-      "label": "Page d'accueil Anima sur mobile"
+      "label": "Anima home on mobile"
     },
     {
       "src": "/screenshots/mobile-call.png",
       "sizes": "750x1334",
       "type": "image/png",
       "form_factor": "narrow",
-      "label": "Appel vidéo en cours sur mobile"
+      "label": "Video call in progress on mobile"
     }
   ],
   "shortcuts": [
     {
-      "name": "Nouvelle réunion",
-      "short_name": "Nouvelle",
-      "description": "Démarrer une nouvelle réunion instantanément",
+      "name": "New meeting",
+      "short_name": "New",
+      "description": "Start a new meeting instantly",
       "url": "/",
       "icons": [
         {
@@ -98,9 +111,9 @@
       ]
     },
     {
-      "name": "Rejoindre une réunion",
-      "short_name": "Rejoindre",
-      "description": "Rejoindre une réunion existante avec un code",
+      "name": "Join a meeting",
+      "short_name": "Join",
+      "description": "Join an existing meeting with a code",
       "url": "/join",
       "icons": [
         {
@@ -110,8 +123,20 @@
       ]
     }
   ],
-  "categories": ["productivity", "business", "communication", "social"],
-  "keywords": ["visioconférence", "video", "appel", "peer-to-peer", "p2p", "sécurisé", "privacy"],
+  "categories": [
+    "productivity",
+    "business",
+    "communication",
+    "social"
+  ],
+  "keywords": [
+    "video call",
+    "peer-to-peer",
+    "p2p",
+    "secure",
+    "privacy",
+    "wings8"
+  ],
   "prefer_related_applications": false,
   "related_applications": [],
   "handle_links": "preferred",
